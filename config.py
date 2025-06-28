@@ -25,7 +25,7 @@ class Config(object):
     DOWNLOAD_LOCATION = "./DOWNLOADS"
 
     # Telegram maximum file upload size
-    TG_MAX_FILE_SIZE = 4194304000
+    TG_MAX_FILE_SIZE = 300
 
     # Chunk size that should be used with requests : default is 128KB
     CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", 128))
@@ -34,7 +34,7 @@ class Config(object):
     HTTP_PROXY = os.environ.get("HTTP_PROXY", "")
 
     # Set timeout for subprocess
-    PROCESS_MAX_TIMEOUT = 3700
+    PROCESS_MAX_TIMEOUT = 0
 
     OWNER_ID = os.environ.get("OWNER_ID")
     ADL_BOT_RQ = {}
